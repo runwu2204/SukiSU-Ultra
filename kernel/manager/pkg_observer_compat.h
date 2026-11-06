@@ -1,7 +1,7 @@
 // This header should not be used outside of pkg_observer.c!
 
 #include <linux/version.h>
-
+#include <linux/susfs.h>
 #if LINUX_VERSION_CODE >= KERNEL_VERSION(5, 2, 0)
 typedef const struct qstr *ksu_fname_t;
 #define ksu_fname_len(f) ((f)->len)
